@@ -4,33 +4,29 @@ import type { NavItem } from '@nuxt/content/dist/runtime/types'
 const navigation = inject<Ref<NavItem[]>>('navigation')
 
 const links = [{
-  label: 'Documentation',
+  label: '关于',
   icon: 'i-heroicons-book-open',
-  to: '/getting-started'
+  to: '/about'
 }, {
-  label: 'Pro',
+  label: '博客',
   icon: 'i-heroicons-square-3-stack-3d',
-  to: '/pro'
+  to: '/blog'
 }, {
-  label: 'Releases',
+  label: '书虫',
   icon: 'i-heroicons-rocket-launch',
-  to: 'https://github.com/nuxt/ui/releases',
-  target: '_blank'
+  to: '/book'
 }]
 </script>
 
 <template>
   <UHeader :links="links">
     <template #logo>
-      <Logo class="w-auto h-6" />
+      <!-- <img src="/img/ran.png" alt="Discover Nuxt 3" /> -->
+      <p class="font-bold text-[#50d71e]">Ran ran</p>
     </template>
 
     <template #right>
-      <UDocsSearchButton :label="null" />
-
       <UColorModeButton />
-
-      <UButton to="https://github.com/nuxt/ui" target="_blank" icon="i-simple-icons-github" color="gray" variant="ghost" />
     </template>
 
     <template #panel>

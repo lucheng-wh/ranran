@@ -1,6 +1,8 @@
 <template>
     <div>
-        <Header />
-        <slot />
+        <RanHeader />
+        <UMain>
+            <slot/>
+        </UMain>
     </div>
 </template>
